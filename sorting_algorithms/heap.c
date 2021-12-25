@@ -2,7 +2,6 @@
 
 void heapify_down_max_fast(int heap[], int i, int n)
 {
-	// if min, get minimum, else get max
 	int largest = get_max_heap_child(heap, i, n);
 	do
 		swap(&heap[i], &heap[largest]);
